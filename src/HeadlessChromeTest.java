@@ -7,12 +7,12 @@ public class HeadlessChromeTest {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "D:\\Azeez\\Dev\\Drivers\\chromedriver.exe");
-		
+
 		ChromeOptions myChromeOptions = new ChromeOptions();
-		
-		myChromeOptions.addArguments("window-size-1400,800");  // Setting window size. MANDATORY!!
-		
-		myChromeOptions.addArguments("headless");		
+
+		myChromeOptions.addArguments("window-size-1400,800"); // Setting window size. MANDATORY!!
+
+		myChromeOptions.addArguments("headless");
 
 		// Initialize browser
 		WebDriver driver = new ChromeDriver(myChromeOptions);
@@ -25,7 +25,7 @@ public class HeadlessChromeTest {
 		driver.manage().window().maximize();
 
 		driver.findElement(By.name("q")).sendKeys("Hello");
-		
+
 		System.out.println("Page Title: " + driver.getTitle());
 	}
 
