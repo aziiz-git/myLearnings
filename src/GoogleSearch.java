@@ -14,7 +14,7 @@ public class GoogleSearch {
 		System.setProperty("webdriver.chrome.driver", "D:\\Azeez\\Dev\\Drivers\\chromedriver.exe");
 
 		// Initialize browser
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();  // ChromeDriver is a class which is implementing WebDriver interface
 
 		// Open Google
 		driver.get("https://www.google.com");
