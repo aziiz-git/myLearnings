@@ -357,8 +357,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestNG Training&quot;&gt;
-  &lt;test name=&quot;Practicing TestNG&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;TestNG Training&quot;&gt;
+  &lt;test verbose=&quot;10&quot; name=&quot;Practicing TestNG&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.testng.ExpectedExceptions&quot;/&gt;
       &lt;class name=&quot;com.testng.GooglePageValidationTest&quot;/&gt;
@@ -416,43 +416,43 @@ data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'googleLogoTest')
 data.setCell(0, 2, 'com.testng.GooglePageValidationTest')
-data.setCell(0, 3, 108);
+data.setCell(0, 3, 69);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'expectedExceptionsTestOne')
 data.setCell(1, 2, 'com.testng.ExpectedExceptions')
-data.setCell(1, 3, 15);
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'expectedExceptionsTestTwo')
-data.setCell(2, 2, 'com.testng.ExpectedExceptions')
-data.setCell(2, 3, 5);
+data.setCell(2, 1, 'sum')
+data.setCell(2, 2, 'com.testng.InvocationCountTest')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'googleTitleTest')
-data.setCell(3, 2, 'com.testng.TestNGBasics')
+data.setCell(3, 1, 'expectedExceptionsTestTwo')
+data.setCell(3, 2, 'com.testng.ExpectedExceptions')
 data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchTest')
+data.setCell(4, 1, 'googleTitleTest')
 data.setCell(4, 2, 'com.testng.TestNGBasics')
-data.setCell(4, 3, 3);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'sum')
 data.setCell(5, 2, 'com.testng.InvocationCountTest')
-data.setCell(5, 3, 3);
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'sum')
 data.setCell(6, 2, 'com.testng.InvocationCountTest')
-data.setCell(6, 3, 3);
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'sum')
-data.setCell(7, 2, 'com.testng.InvocationCountTest')
-data.setCell(7, 3, 3);
+data.setCell(7, 1, 'searchTest')
+data.setCell(7, 2, 'com.testng.TestNGBasics')
+data.setCell(7, 3, 2);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'sum')
 data.setCell(8, 2, 'com.testng.InvocationCountTest')
-data.setCell(8, 3, 3);
+data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'sum')
 data.setCell(9, 2, 'com.testng.InvocationCountTest')
-data.setCell(9, 3, 3);
+data.setCell(9, 3, 2);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'sum')
 data.setCell(10, 2, 'com.testng.InvocationCountTest')
@@ -468,24 +468,24 @@ data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'sum')
 data.setCell(13, 2, 'com.testng.InvocationCountTest')
-data.setCell(13, 3, 2);
+data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'sum')
 data.setCell(14, 2, 'com.testng.InvocationCountTest')
-data.setCell(14, 3, 2);
+data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'sum')
 data.setCell(15, 2, 'com.testng.InvocationCountTest')
-data.setCell(15, 3, 2);
+data.setCell(15, 3, 1);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'sum')
 data.setCell(16, 2, 'com.testng.InvocationCountTest')
-data.setCell(16, 3, 2);
+data.setCell(16, 3, 1);
 window.suiteTableData['TestNG_Training']= { tableData: data, tableDiv: 'times-div-TestNG_Training'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 163 ms</span>
+              <span class="suite-total-time">Total running time: 104 ms</span>
               <div id="times-div-TestNG_Training">
               </div> <!-- times-div-TestNG_Training -->
             </div> <!-- times-div -->
@@ -518,130 +518,130 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.ExpectedExceptions</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">expectedExceptionsTestOne</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">67 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">expectedExceptionsTestTwo</span>
-                <span class="method-start">76 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.InvocationCountTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">88 ms</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">94 ms</span>
+                <span class="method-start">98 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">101 ms</span>
+                <span class="method-start">102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">106 ms</span>
+                <span class="method-start">107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">110 ms</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">120 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">127 ms</span>
+                <span class="method-start">124 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-start">131 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">135 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sum</span>
-                <span class="method-start">144 ms</span>
+                <span class="method-start">139 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.TestNGBasics</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">login</span>
-                <span class="method-start">149 ms</span>
+                <span class="method-start">144 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">enterURL</span>
-                <span class="method-start">150 ms</span>
+                <span class="method-start">145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">googleTitleTest</span>
-                <span class="method-start">151 ms</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">enterURL</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchTest</span>
+                <span class="method-start">152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut</span>
                 <span class="method-start">155 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">enterURL</span>
-                <span class="method-start">156 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchTest</span>
-                <span class="method-start">156 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">161 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">deleteAllCookies</span>
-                <span class="method-start">163 ms</span>
+                <span class="method-start">156 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.GooglePageValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">166 ms</span>
+                <span class="method-start">157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">googleLogoTest</span>
-                <span class="method-start">5795 ms</span>
+                <span class="method-start">6286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5905 ms</span>
+                <span class="method-start">6356 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.TestNGBasics</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">6743 ms</span>
+                <span class="method-start">7166 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateTestReport</span>
-                <span class="method-start">6778 ms</span>
+                <span class="method-start">7208 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
