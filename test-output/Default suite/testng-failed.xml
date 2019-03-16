@@ -3,13 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testng.GooglePageValidationTest">
+      <class name="com.testng.RetryLogicTestNG">
         <methods>
-          <include name="googleTitleTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="Test1"/>
+          <include name="Test2"/>
         </methods>
-      </class> <!-- com.testng.GooglePageValidationTest -->
+      </class> <!-- com.testng.RetryLogicTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

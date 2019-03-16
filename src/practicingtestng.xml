@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Training" verbose="10" parallel="tests"
+	thread-count="4">
+	<test name="Practicing TestNG">
+		<classes>
+			<class name="com.testng.ExpectedExceptions" />
+			<class name="com.testng.GooglePageValidationTest" />
+			<class name="com.testng.GoogleTest" />
+			<class name="com.testng.InvocationCountTest" />
+			<class name="com.testng.TestNGBasics" />
+		</classes>
+	</test>
+</suite>

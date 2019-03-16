@@ -1,156 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="12" failed="4" ignored="0" total="35" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Training" duration-ms="7139" started-at="2018-12-25T20:06:00Z" finished-at="2018-12-25T20:06:07Z">
+  <suite name="TestNG Training" duration-ms="220168" started-at="2019-03-16T07:51:54Z" finished-at="2019-03-16T07:55:34Z">
     <groups>
       <group name="Title Test">
-        <method signature="GooglePageValidationTest.googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@2b98378d]" name="googleTitleTest" class="com.testng.GooglePageValidationTest"/>
-        <method signature="GoogleTest.googleTitleTest()[pri:3, instance:com.testng.GoogleTest@475530b9]" name="googleTitleTest" class="com.testng.GoogleTest"/>
+        <method signature="GooglePageValidationTest.googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleTitleTest" class="com.testng.GooglePageValidationTest"/>
+        <method signature="GoogleTest.googleTitleTest()[pri:3, instance:com.testng.GoogleTest@8bd1b6a]" name="googleTitleTest" class="com.testng.GoogleTest"/>
       </group> <!-- Title Test -->
       <group name="Link Test">
-        <method signature="GoogleTest.gmailLinktest()[pri:2, instance:com.testng.GoogleTest@475530b9]" name="gmailLinktest" class="com.testng.GoogleTest"/>
+        <method signature="GoogleTest.gmailLinktest()[pri:2, instance:com.testng.GoogleTest@8bd1b6a]" name="gmailLinktest" class="com.testng.GoogleTest"/>
       </group> <!-- Link Test -->
       <group name="Logo Test">
-        <method signature="GooglePageValidationTest.googleLogoTest()[pri:1, instance:com.testng.GooglePageValidationTest@2b98378d]" name="googleLogoTest" class="com.testng.GooglePageValidationTest"/>
-        <method signature="GoogleTest.googleLogoTest()[pri:1, instance:com.testng.GoogleTest@475530b9]" name="googleLogoTest" class="com.testng.GoogleTest"/>
+        <method signature="GooglePageValidationTest.googleLogoTest()[pri:1, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleLogoTest" class="com.testng.GooglePageValidationTest"/>
+        <method signature="GoogleTest.googleLogoTest()[pri:1, instance:com.testng.GoogleTest@8bd1b6a]" name="googleLogoTest" class="com.testng.GoogleTest"/>
       </group> <!-- Logo Test -->
     </groups>
-    <test name="Practicing TestNG" duration-ms="7139" started-at="2018-12-25T20:06:00Z" finished-at="2018-12-25T20:06:07Z">
+    <test name="Practicing TestNG" duration-ms="220168" started-at="2019-03-16T07:51:54Z" finished-at="2019-03-16T07:55:34Z">
       <class name="com.testng.GooglePageValidationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@2b98378d]" name="setUp" is-config="true" duration-ms="6129" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="setUp" is-config="true" duration-ms="7118" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleLogoTest()[pri:1, instance:com.testng.GooglePageValidationTest@2b98378d]" name="googleLogoTest" duration-ms="69" started-at="2018-12-26T01:36:06Z" finished-at="2018-12-26T01:36:06Z">
+        <test-method status="PASS" signature="googleLogoTest()[pri:1, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleLogoTest" duration-ms="75" started-at="2019-03-16T13:22:01Z" finished-at="2019-03-16T13:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleLogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@2b98378d]" name="tearDown" is-config="true" duration-ms="810" started-at="2018-12-26T01:36:06Z" finished-at="2018-12-26T01:36:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="785" started-at="2019-03-16T13:22:01Z" finished-at="2019-03-16T13:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="setUp" is-config="true" duration-ms="4190" started-at="2019-03-16T13:25:08Z" finished-at="2019-03-16T13:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleTitleTest" duration-ms="18" started-at="2019-03-16T13:25:12Z" finished-at="2019-03-16T13:25:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title is not matching :( expected [Expected value should be here] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title is not matching :( expected [Expected value should be here] but found [Google]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at com.testng.GooglePageValidationTest.googleTitleTest(GooglePageValidationTest.java:32)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="793" started-at="2019-03-16T13:25:12Z" finished-at="2019-03-16T13:25:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="setUp" is-config="true" duration-ms="4355" started-at="2019-03-16T13:25:13Z" finished-at="2019-03-16T13:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleTitleTest" duration-ms="16" started-at="2019-03-16T13:25:17Z" finished-at="2019-03-16T13:25:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title is not matching :( expected [Expected value should be here] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title is not matching :( expected [Expected value should be here] but found [Google]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at com.testng.GooglePageValidationTest.googleTitleTest(GooglePageValidationTest.java:32)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="792" started-at="2019-03-16T13:25:17Z" finished-at="2019-03-16T13:25:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="setUp" is-config="true" duration-ms="4190" started-at="2019-03-16T13:25:18Z" finished-at="2019-03-16T13:25:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleTitleTest" duration-ms="19" started-at="2019-03-16T13:25:22Z" finished-at="2019-03-16T13:25:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title is not matching :( expected [Expected value should be here] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title is not matching :( expected [Expected value should be here] but found [Google]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at com.testng.GooglePageValidationTest.googleTitleTest(GooglePageValidationTest.java:32)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="795" started-at="2019-03-16T13:25:22Z" finished-at="2019-03-16T13:25:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="setUp" is-config="true" duration-ms="4614" started-at="2019-03-16T13:25:23Z" finished-at="2019-03-16T13:25:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="googleTitleTest()[pri:3, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="googleTitleTest" duration-ms="19" started-at="2019-03-16T13:25:27Z" finished-at="2019-03-16T13:25:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title is not matching :( expected [Expected value should be here] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title is not matching :( expected [Expected value should be here] but found [Google]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at com.testng.GooglePageValidationTest.googleTitleTest(GooglePageValidationTest.java:32)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GooglePageValidationTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="890" started-at="2019-03-16T13:25:27Z" finished-at="2019-03-16T13:25:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testng.GooglePageValidationTest -->
-      <class name="com.testng.TestNGBasics">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="setUp" is-config="true" duration-ms="25" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+      <class name="com.testng.GoogleTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4190" started-at="2019-03-16T13:22:02Z" finished-at="2019-03-16T13:22:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="launchBrowser" is-config="true" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="googleLogoTest()[pri:1, instance:com.testng.GoogleTest@8bd1b6a]" name="googleLogoTest" duration-ms="70" started-at="2019-03-16T13:22:06Z" finished-at="2019-03-16T13:22:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="login" is-config="true" duration-ms="0" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        </test-method> <!-- googleLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="761" started-at="2019-03-16T13:22:06Z" finished-at="2019-03-16T13:22:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="enterURL()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="enterURL" is-config="true" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="3981" started-at="2019-03-16T13:22:07Z" finished-at="2019-03-16T13:22:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterURL -->
-        <test-method status="PASS" signature="googleTitleTest()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="googleTitleTest" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="gmailLinktest()[pri:2, instance:com.testng.GoogleTest@8bd1b6a]" name="gmailLinktest" duration-ms="40068" started-at="2019-03-16T13:22:11Z" finished-at="2019-03-16T13:22:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: b71bbb484d2d8a1bab064a90c1a2af3c*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: b71bbb484d2d8a1bab064a90c1a2af3c*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.testng.GoogleTest.gmailLinktest(GoogleTest.java:46)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLinktest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="769" started-at="2019-03-16T13:22:51Z" finished-at="2019-03-16T13:22:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4114" started-at="2019-03-16T13:22:52Z" finished-at="2019-03-16T13:22:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="gmailLinktest()[pri:2, instance:com.testng.GoogleTest@8bd1b6a]" name="gmailLinktest" duration-ms="40074" started-at="2019-03-16T13:22:56Z" finished-at="2019-03-16T13:23:36Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: ec168211574383edb059c6db7a7ce946*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: ec168211574383edb059c6db7a7ce946*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.testng.GoogleTest.gmailLinktest(GoogleTest.java:46)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLinktest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="786" started-at="2019-03-16T13:23:36Z" finished-at="2019-03-16T13:23:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4658" started-at="2019-03-16T13:23:37Z" finished-at="2019-03-16T13:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="gmailLinktest()[pri:2, instance:com.testng.GoogleTest@8bd1b6a]" name="gmailLinktest" duration-ms="40078" started-at="2019-03-16T13:23:41Z" finished-at="2019-03-16T13:24:21Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: 54d7597e5081b6f0d3ee3b234f3a5183*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: 54d7597e5081b6f0d3ee3b234f3a5183*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.testng.GoogleTest.gmailLinktest(GoogleTest.java:46)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLinktest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="849" started-at="2019-03-16T13:24:21Z" finished-at="2019-03-16T13:24:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4761" started-at="2019-03-16T13:24:22Z" finished-at="2019-03-16T13:24:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="gmailLinktest()[pri:2, instance:com.testng.GoogleTest@8bd1b6a]" name="gmailLinktest" duration-ms="40021" started-at="2019-03-16T13:24:27Z" finished-at="2019-03-16T13:25:07Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: 26e018292f107d150d6282d18b94df1e*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']"}  (Session info: chrome=72.0.3626.121)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'System info: host: 'AZIIZ', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}Session ID: 26e018292f107d150d6282d18b94df1e*** Element info: {Using=xpath, value=//a[@class='gb_P' and @href='https://mail.google.com/mail/?tab=wm']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.testng.GoogleTest.gmailLinktest(GoogleTest.java:46)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailLinktest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="737" started-at="2019-03-16T13:25:07Z" finished-at="2019-03-16T13:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4286" started-at="2019-03-16T13:25:28Z" finished-at="2019-03-16T13:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="googleTitleTest()[pri:3, instance:com.testng.GoogleTest@8bd1b6a]" name="googleTitleTest" duration-ms="33" started-at="2019-03-16T13:25:33Z" finished-at="2019-03-16T13:25:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleTitleTest -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="logOut" is-config="true" duration-ms="0" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testng.GoogleTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="1006" started-at="2019-03-16T13:25:33Z" finished-at="2019-03-16T13:25:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="enterURL()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="enterURL" is-config="true" duration-ms="0" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testng.GoogleTest -->
+      <class name="com.testng.TestNGBasics">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="setUp" is-config="true" duration-ms="27" started-at="2019-03-16T13:21:53Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="launchBrowser" is-config="true" duration-ms="1" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="login" is-config="true" duration-ms="2" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="enterURL()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="enterURL" is-config="true" duration-ms="1" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterURL -->
-        <test-method status="PASS" signature="searchTest()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="searchTest" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="googleTitleTest()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="googleTitleTest" duration-ms="2" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="logOut" is-config="true" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="logOut" is-config="true" duration-ms="15" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="deleteAllCookies()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="deleteAllCookies" is-config="true" duration-ms="0" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="enterURL()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="enterURL" is-config="true" duration-ms="2" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterURL -->
+        <test-method status="PASS" signature="searchTest()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="searchTest" duration-ms="6" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="logOut" is-config="true" duration-ms="4" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="deleteAllCookies()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="deleteAllCookies" is-config="true" duration-ms="1" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteAllCookies -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2018-12-26T01:36:07Z" finished-at="2018-12-26T01:36:07Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="generateTestReport()[pri:0, instance:com.testng.TestNGBasics@cb5822]" name="generateTestReport" is-config="true" duration-ms="0" started-at="2018-12-26T01:36:07Z" finished-at="2018-12-26T01:36:07Z">
+        <test-method status="PASS" signature="generateTestReport()[pri:0, instance:com.testng.TestNGBasics@c038203]" name="generateTestReport" is-config="true" duration-ms="1" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateTestReport -->
       </class> <!-- com.testng.TestNGBasics -->
       <class name="com.testng.InvocationCountTest">
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="7" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="8" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="8" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="3" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="3" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="13" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="3" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="5" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="8" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="3" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="4" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="2" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="2" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@1d057a39]" name="sum" duration-ms="1" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="sum()[pri:0, instance:com.testng.InvocationCountTest@18be83e4]" name="sum" duration-ms="5" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
       </class> <!-- com.testng.InvocationCountTest -->
       <class name="com.testng.ExpectedExceptions">
-        <test-method status="PASS" signature="expectedExceptionsTestOne()[pri:0, instance:com.testng.ExpectedExceptions@4b9e13df]" name="expectedExceptionsTestOne" duration-ms="7" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="expectedExceptionsTestOne()[pri:0, instance:com.testng.ExpectedExceptions@cc285f4]" name="expectedExceptionsTestOne" duration-ms="11" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[/ by zero]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ArithmeticException: / by zeroat com.testng.ExpectedExceptions.expectedExceptionsTestOne(ExpectedExceptions.java:11)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[java.lang.ArithmeticException: / by zeroat com.testng.ExpectedExceptions.expectedExceptionsTestOne(ExpectedExceptions.java:11)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
             </full-stacktrace>
           </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- expectedExceptionsTestOne -->
-        <test-method status="PASS" signature="expectedExceptionsTestTwo()[pri:0, instance:com.testng.ExpectedExceptions@4b9e13df]" name="expectedExceptionsTestTwo" duration-ms="3" started-at="2018-12-26T01:36:00Z" finished-at="2018-12-26T01:36:00Z">
+        <test-method status="PASS" signature="expectedExceptionsTestTwo()[pri:0, instance:com.testng.ExpectedExceptions@cc285f4]" name="expectedExceptionsTestTwo" duration-ms="2" started-at="2019-03-16T13:21:54Z" finished-at="2019-03-16T13:21:54Z">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: "Azeez"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "Azeez"at java.lang.NumberFormatException.forInputString(Unknown Source)at java.lang.Integer.parseInt(Unknown Source)at java.lang.Integer.parseInt(Unknown Source)at com.testng.ExpectedExceptions.expectedExceptionsTestTwo(ExpectedExceptions.java:18)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[java.lang.NumberFormatException: For input string: "Azeez"at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)at java.lang.Integer.parseInt(Integer.java:580)at java.lang.Integer.parseInt(Integer.java:615)at com.testng.ExpectedExceptions.expectedExceptionsTestTwo(ExpectedExceptions.java:18)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
@@ -159,4 +345,112 @@
       </class> <!-- com.testng.ExpectedExceptions -->
     </test> <!-- Practicing TestNG -->
   </suite> <!-- TestNG Training -->
+  <suite name="My Test Suite" duration-ms="0" started-at="2019-03-16T07:55:35Z" finished-at="2019-03-16T07:55:35Z">
+    <groups>
+    </groups>
+  </suite> <!-- My Test Suite -->
+  <suite name="RetryFailedTestSuite" duration-ms="70" started-at="2019-03-16T07:55:34Z" finished-at="2019-03-16T07:55:34Z">
+    <groups>
+    </groups>
+    <test name="Retry Failed Test Cases" duration-ms="70" started-at="2019-03-16T07:55:34Z" finished-at="2019-03-16T07:55:34Z">
+      <class name="com.testng.RetryLogicTestNG">
+        <test-method status="SKIP" signature="Test1()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test1" duration-ms="2" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test1(RetryLogicTestNG.java:12)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="SKIP" signature="Test1()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test1" duration-ms="1" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test1(RetryLogicTestNG.java:12)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="SKIP" signature="Test1()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test1" duration-ms="3" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test1(RetryLogicTestNG.java:12)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="FAIL" signature="Test1()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test1" duration-ms="3" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test1(RetryLogicTestNG.java:12)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="SKIP" signature="Test2()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test2" duration-ms="10" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test2(RetryLogicTestNG.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="SKIP" signature="Test2()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test2" duration-ms="3" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test2(RetryLogicTestNG.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="SKIP" signature="Test2()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test2" duration-ms="3" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test2(RetryLogicTestNG.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="FAIL" signature="Test2()[pri:0, instance:com.testng.RetryLogicTestNG@7cd62f43]" name="Test2" duration-ms="2" started-at="2019-03-16T13:25:34Z" finished-at="2019-03-16T13:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:568)at org.testng.Assert.assertEquals(Assert.java:578)at com.testng.RetryLogicTestNG.Test2(RetryLogicTestNG.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.retryFailed(Invoker.java:829)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1000)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1183)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- com.testng.RetryLogicTestNG -->
+    </test> <!-- Retry Failed Test Cases -->
+  </suite> <!-- RetryFailedTestSuite -->
 </testng-results>

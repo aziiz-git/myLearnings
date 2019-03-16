@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestNG Training]">
-  <test name="Practicing TestNG(failed)">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [TestNG Training]" parallel="tests">
+  <test thread-count="4" verbose="10" name="Practicing TestNG(failed)" parallel="tests">
     <classes>
-      <class name="com.testng.ExceptionTimeOutTest">
+      <class name="com.testng.GooglePageValidationTest">
         <methods>
-          <include name="infiniteLoopTest"/>
+          <include name="googleTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.testng.ExceptionTimeOutTest -->
+      </class> <!-- com.testng.GooglePageValidationTest -->
+      <class name="com.testng.GoogleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="gmailLinktest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testng.GoogleTest -->
     </classes>
   </test> <!-- Practicing TestNG(failed) -->
 </suite> <!-- Failed suite [TestNG Training] -->
