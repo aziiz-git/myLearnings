@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="C:/Dev/JAR/WebDriver/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Dev/JAR/MongoDB/mongo-java-driver-3.9.1.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Dev/JAR/Apache/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
