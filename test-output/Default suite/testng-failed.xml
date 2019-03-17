@@ -3,12 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testng.RetryLogicTestNG">
+      <class name="FreeCRMTestingHashMap.FreeCRMTesting">
         <methods>
-          <include name="Test1"/>
-          <include name="Test2"/>
+          <include name="loginWithAzeezTest1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.testng.RetryLogicTestNG -->
+      </class> <!-- FreeCRMTestingHashMap.FreeCRMTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
