@@ -26,7 +26,3 @@ public class ReverseInteger {
 		System.out.println(stringBuffer.reverse());
 	}
 }
-
-
-
-// Checking
