@@ -3,16 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ScreenshotForFailed.ScreenshotTestClass">
+      <class name="com.testng.RetryLogicTestNG">
         <methods>
-          <include name="alwaysFailingFunction2"/>
-          <include name="tearDown"/>
-          <include name="alwaysFailingFunction3"/>
-          <include name="alwaysFailingFunction4"/>
-          <include name="alwaysFailingFunction1"/>
-          <include name="setUp"/>
+          <include name="Test1"/>
+          <include name="Test2"/>
         </methods>
-      </class> <!-- ScreenshotForFailed.ScreenshotTestClass -->
+      </class> <!-- com.testng.RetryLogicTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

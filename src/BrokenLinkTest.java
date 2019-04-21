@@ -36,12 +36,12 @@ public class BrokenLinkTest {
 
 		driver.switchTo().frame("mainpanel");
 
-		List<WebElement> linksOnThePage = driver.findElements(By.tagName("a")); // Step 1
+		List <WebElement> linksOnThePage = driver.findElements(By.tagName("a")); // Step 1
 		linksOnThePage.addAll(driver.findElements(By.tagName("img"))); // Step 2
 
 		System.out.println("Size of all the Links and Images: " + linksOnThePage.size());
 
-		List<WebElement> activeLinks = new ArrayList<WebElement>(); // Step 3
+		List <WebElement> activeLinks = new ArrayList <WebElement>(); // Step 3
 
 		for (int i = 0; i < linksOnThePage.size(); i++) { // Step 4
 			// System.out.println(linksOnThePage.get(i).getAttribute("href")); // To view

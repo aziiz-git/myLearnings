@@ -1,10 +1,10 @@
-package JavaPracticing;
+package javaPracticing;
 
 public class RemoveJunk {
 
 	public static void main(String[] args) {
 
-		String myString = "中國哲學書電子化計劃 Hello World 09843211234890";
+		String myString = "中國哲學書電�?化計劃 Hello World 09843211234890";
 
 		System.out.println("My String before: " + myString);
 

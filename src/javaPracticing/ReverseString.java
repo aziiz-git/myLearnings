@@ -1,4 +1,4 @@
-package JavaPracticing;
+package javaPracticing;
 
 public class ReverseString {
 
