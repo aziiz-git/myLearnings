@@ -27,7 +27,7 @@ public class ArrayListConcept {
 		//	ArrayList <Integer> myGenericsArrayList = new ArrayList <Integer> (); // We can add only Integer to it.
 		//	myGenericsArrayList.add("Hello"); This cannot be added.
 			
-			ArrayList <E> myGenericsArrayListButNotSureTheType = new ArrayList <E> (); // When we are not sure about the type
+		ArrayList <E> myGenericsArrayListButNotSureTheType = new ArrayList <E> (); // When we are not sure about the type
 			
 		/*GENERICS Example using User Defined data type:	*/
 		ArrayListConceptEmployee emp1 = new ArrayListConceptEmployee("Azeez", 22, "QA");
